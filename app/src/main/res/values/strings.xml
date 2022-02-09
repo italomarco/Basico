@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Basico</string>
+    <string name="exibir_toast">EXIBIR TOAST</string>
+    <string name="tela2">TELA2</string>
+    <string name="buttonParcel">Botão Parcel </string>
+</resources>
