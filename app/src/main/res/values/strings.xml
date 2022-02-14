@@ -3,4 +3,6 @@
     <string name="exibir_toast">EXIBIR TOAST</string>
     <string name="tela2">TELA2</string>
     <string name="buttonParcel">Botão Parcel </string>
+    <string name="tela2_texto1">Nome: %1$s / Código: %2$d</string>
+    <string name="tela2_texto2">Nome: %1$s / Idade: %2$d</string>
 </resources>
