@@ -14,14 +14,20 @@ class Tela2Activity : AppCompatActivity() {
         val idade = intent.getStringExtra("idade")
 
         mensagem.text = "Nome: $nome / Idade: $idade"
+        
         val cliente = intent.getParcelableExtra<Cliente>("cliente")
+        val pessoa =  = intent.getSerializableExtra("pessoa") as 
+        pessoa ? 
         val textMensagem = null
+        
         mensagem.text = if (cliente != null){
-            "Nome:${cliente.nome} / Código:${cliente.codigo}"
-        }else{
-            "Nome:$nome /Idade: $idade"
-        }
+            getString(R.tela2_texto1,cliente.nome,cliente.codigo)
+            
+        }else if (pessoa != null) {
+            getString(R.string.tela2_texto2, pessoa.nome, pessoa.idade)
+        }else {
+           getString(R.string.tela2_texto2, nome, idade)
 
 
-    }
+    
 }
